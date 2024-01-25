@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS reset*/
+        body {
+            font-family: sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0;
+            background: url('pexels-anush-gorak-1229356.jpg');
+            background-size: 1500px;
+        }
+
+        .left {
+            display: inline-block;
+            /*border: 2px solid red;*/
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            text-align: center;
+
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 19px;
+            font-size: 26px;
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert(100%);
+
+        }
+
+        .mid {
+            display: block;
+            width: 46%;
+            margin: 29px auto;
+           /* border: 2px solid yellow;*/
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top:48px;
+            display: inline-block;
+            /*border: 2px solid purple;   */
+        }
+
+        .btn {
+            margin: 0 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(113, 108, 108);
+        }
+
+        .navbar {
+            display: inline-block
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .container {
+
+            border: 2px solid white;
+            margin: 80px 80px;
+            padding: 50px;
+            width: 28%;
+            border-radius: 28px;
+
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 250px;
+            
+            margin: 10px auto;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            border: 2px solid white;
+            width: 300px;
+            padding: 1px;
+            margin: 11px auto;
+            font-size: 17px;
+            border-radius: 8px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="de4z3y0o.png" alt="">
+            <div>Fitness</div>
+        </div>
+
+        <!-- mid box for nevbar -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">About Us</a></li>
+                <li> <a href="#">Fitness Calculator</a></li>
+                <li> <a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+
+    
+    <div class="container">
+        <h2>Join the best gym of haridwar now</h2>
+        <form action="noaction.php">
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone No">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
